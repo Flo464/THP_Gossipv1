@@ -1,5 +1,10 @@
-<h1> Profil de <%= @user.first_name %> <%= @user.last_name %> </h1>
+<h1> Profil de <%= @user_find.first_name %> <%= @user_find.last_name %> </h1>
 
-<p> Nom <%= @user.first_name%> </p>
-<p> Age <%= @user.age%> </p>
-<p> Ville <%@user.city%> </p>
+<div class=text-center>
+ 	<p> Prenom :<%= @user_find.first_name%> </p>
+	<p> Nom :<%= @user_find.last_name%> </p>
+	<p> Age :<%= @user_find.age%> ans</p>
+	<p> Email :<%= @user_find.email%></p>
+	<p> Description :<%= @user_find.description%></p>
+</div>
+

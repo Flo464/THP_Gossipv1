@@ -23,7 +23,7 @@ class StaticController < ApplicationController
 	end 
 
 	def user_show
-		@user_find = User.find(params['id'])
+		@user_find = User.find(params[:id])
 	end 
 
 end 

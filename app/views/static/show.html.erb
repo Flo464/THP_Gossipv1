@@ -2,7 +2,7 @@
 <div class="container">
 	<div class="card">
 		<div class="card-header">
-			<%= @gossip.user.first_name %>
+			<a href="/user/<%=@user_find.id %>"><%= @gossip.user.first_name %></a>
 		</div>
 		<div class="card-body">
 			<p class="card-text">

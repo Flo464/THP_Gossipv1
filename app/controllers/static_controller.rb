@@ -10,6 +10,7 @@ class StaticController < ApplicationController
 		@user.first_name = params[:first_name]
 
 		@gossips = GossipItem.all
+
 	end 
 
 	def user
@@ -19,6 +20,10 @@ class StaticController < ApplicationController
 
 	def show
     @gossip = GossipItem.find(params['id'])
+	end 
+
+	def user_show
+		@user_find = User.find(params['id'])
 	end 
 
 end 

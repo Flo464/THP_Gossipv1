@@ -12,4 +12,8 @@ Rails.application.routes.draw do
   	erb :show, locals: {id: params['id']}
   end 
 
+  get 'user/:id', to: 'static#user_show' do 
+  	erb :user_show, locals: {id: params['id']}
+  end 
+
 end

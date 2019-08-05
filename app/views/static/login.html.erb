@@ -8,13 +8,11 @@
 	<input type="submit" name="Envoyer">
 </form>
 </p>
-<p> Bonjour <%= @user.first_name %> </p>
 </div>
 
 <div class="text-left">
 	<h2> Voici tous les gossips </h2>
-	<%= @gossips.each do |gossip| %>
-	<p><a href="/gossips/:id"> <%= gossip.title %>, <%=gossip.user.first_name%> </a></p>
-	<% params['id'] = gossip.id%>
+	<% @gossips.each do |gossip| %>
+	<p><a href="/gossips/<%=gossip.id%>"> <%= gossip.title %>, <%=gossip.user.first_name%> </a></p>
 	<% end %>
 </div>
